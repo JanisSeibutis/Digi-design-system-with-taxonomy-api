@@ -1,38 +1,75 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/6VsM7MHT)
-# Skapa en egen Platsbanken för ert drömscenario 
+# Digi Design Taxonomy – Job Search Application
 
-Dokumentation om Arbetsförmedlingens öppna data finns på https://jobtechdev.se. All öppna data från arbetsförmedlingen och andra offentliga organisationen går även att hitta direkt på dataportal.se. 
-I detta dokument ges två förslag på användningsfall som vi tror är lämpliga för studenter som vill utveckla en applikation på riktig data. All data som är öppna data får vem som helst använda utan att fråga myndigheten om lov, så ingen är begränsad till de exempel vi ger.
+## Overview
 
-Läs först igenom kom-igång hjälpen 
+This project is a **group-built web application** that leverages **Arbetsförmedlingen’s open source Design System** and the **Taxonomy API** to create a modern, accessible, and responsive platform for searching and viewing job ads.
 
--  [Övergripande dokumentation API:etJobSearch](https://jobtechdev.se/sv/components/jobsearch)
--  [Kom-igång guide](https://gitlab.com/arbetsformedlingen/education/education-api/-/blob/main/GETTING_STARTED.md)
+The application is inspired by Arbetsförmedlingen’s own job search tools but is designed with our own UX, colors, and layout choices — ensuring both functionality and originality while maintaining accessibility and consistency through the design system.
 
-## Prova att utforska datan med vår interaktiva tjänst 
+---
 
-Görs genom att öppna Swagger-sidan för API:et (för att enkelt testa olika endpoints i API:et och läsa dokumentation för respektive endpoint): Search job ads (jobtechdev.se) 
+## Key Features
 
-## Uppgift 
+- 🔍 Search for jobs using Arbetsförmedlingen’s **Taxonomy and Job Search API**
+- 🧭 Browse, filter, and explore job ads dynamically
+- 🎨 Built with Arbetsförmedlingen’s **open source design system**
+- ⚙️ Built using **Vite + React + TypeScript**
+- 📊 Structured API data presentation (lists, charts, filters)
+- ♿ Accessible and responsive user interface
 
-Använd endpoint https://jobsearch.api.jobtechdev.se/ för att använda/söka bland befintliga annonser. 
-Det går även bra att använda historiska annonser om ni vill jämföra aktuella annonser med hur det har sett ut tidigare. Detta api finns här: Historical job ads (jobtechdev.se)
+---
 
-Om möjligt, använd en grafisk presentation av era resultat genom t.ex. stapeldiagram eller linjegrafer.
+## Tech Stack
 
-**Observera**
-Er slutprodukt ska ej innehålla Arbetsförmedlingens logga eller färger. Anpassa gärna efter eget tycke och smak så att ni har en färgpalett och en god tanke bakom. 
+| Category        | Tools / Libraries                                                     |
+| --------------- | --------------------------------------------------------------------- |
+| Framework       | [React](https://react.dev/)                                           |
+| Build Tool      | [Vite](https://vitejs.dev/)                                           |
+| Language        | [TypeScript](https://www.typescriptlang.org/)                         |
+| Styling         | Arbetsförmedlingen Design System + Styled Components                  |
+| API             | [Arbetsförmedlingen JobSearch & Taxonomy API](https://jobtechdev.se/) |
+| Data Fetching   | Fetch API / Axios                                                     |
+| Version Control | Git & GitHub                                                          |
 
-## Betygskriterier 
+---
 
-### Need-to-have (G) 
-- Ni har hämtat data på ett strukturerat sätt med hjälp av antingen fetch eller axios. 
-- Ni har skapat en tjänst som ni använder för att hämta data. 
-- Ni använder react-koncept vi har pratat om för att göra datan tillgänglig (context, state, routing et.c.). 
-- Ni använder den syntax, namngivningsstandard samt skrivsätt som vi har lärt er.  
-- Ni använder designsystemet för presentation. 
+## APIs Used
 
-### Nice-to-have (Extra bonus) 
-- Styled components (som drar nytta av designsystemet) 
-- Grafisk presentation av datat 
-- Användning av custom hook där det finns möjlighet
+The project integrates with the following endpoints:
+
+- **Job Search API** → `https://jobsearch.api.jobtechdev.se/`  
+  Used to fetch current and historical job ads.
+
+- **Taxonomy API** → Provides access to job categories, occupations, and related metadata for structured filtering.
+
+Documentation and further resources are available at [Jobtech Dev](https://jobtechdev.se/).
+
+---
+
+## Development Approach
+
+- We used **React Context** to manage shared state (e.g. job data, filters).
+- API integration was abstracted into dedicated services for maintainability.
+- The UI follows **Arbetsförmedlingen’s design principles** for accessibility and structure.
+- Each component is modular, reusable, and strongly typed with TypeScript.
+
+---
+
+## Contributors
+
+This project was developed as part of a **group assignment** within the Front-End Development course.
+
+**Team Members:**
+
+- JanisSeibutis
+- mikaelakihl
+- axandranathalie
+
+---
+
+## License
+
+This project is for educational purposes only and is **not affiliated with Arbetsförmedlingen**.  
+All API data and design system resources are used according to [Jobtech Dev’s open data and design system license](https://jobtechdev.se/).
+
+---
