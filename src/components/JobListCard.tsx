@@ -10,12 +10,12 @@ import {
   DigiLayoutBlock,
   DigiTypography,
 } from '@digi/arbetsformedlingen-react'
-import type { IJob } from './JobList'
 import { Link } from 'react-router'
 import { useSavedJobs } from '../contexts/useSavedJobs'
+import type { Job } from '../models/job'
 
 interface JobListCardProps {
-  job: IJob
+  job: Job
 }
 
 export const JobListCard = ({ job }: JobListCardProps) => {

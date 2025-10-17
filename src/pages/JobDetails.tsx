@@ -18,15 +18,15 @@ import {
   DigiLayoutContainer,
   DigiTypography,
 } from '@digi/arbetsformedlingen-react'
-import type { IJob } from '../models/IJob'
 import { useSavedJobs } from '../contexts/useSavedJobs'
+import type { Job } from '../models/job'
 
 export const JobDetails = () => {
   const navigate = useNavigate()
   const { id } = useParams()
-  const location = useLocation() as { state?: { job?: IJob } }
+  const location = useLocation() as { state?: { job?: Job } }
 
-  const [job, setJob] = useState<IJob | null>(location.state?.job || null)
+  const [job, setJob] = useState<Job | null>(location.state?.job || null)
   const { isSaved, saveJob, removeJob } = useSavedJobs()
   const saved = job?.id ? isSaved(job.id) : false
 

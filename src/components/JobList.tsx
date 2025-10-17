@@ -1,9 +1,9 @@
 import { DigiButton, DigiIconChevronDown } from '@digi/arbetsformedlingen-react'
 import { JobListCard } from './JobListCard'
 import { ButtonSize, ButtonVariation } from '@digi/arbetsformedlingen'
-import type { IJob } from '../models/IJob'
+import type { Job } from '../models/job'
 
-export const JobList = ({ jobs }: { jobs: IJob[] }) => {
+export const JobList = ({ jobs }: { jobs: Job[] }) => {
   return (
     <>
       <div className="sorting-button">

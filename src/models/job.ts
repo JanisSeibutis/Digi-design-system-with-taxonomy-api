@@ -1,4 +1,4 @@
-export type IJob = {
+export type Job = {
   id: number
   title: string
   location: string

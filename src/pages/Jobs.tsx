@@ -2,8 +2,8 @@ import { useContext } from 'react'
 import { JobList } from '../components/JobList'
 import { LatestSearchAndSavedAdsButtons } from '../components/LatestSearchAndSavedAdsButtons'
 import { SearchPanel } from '../components/SearcPanel'
-import type { IJob } from '../models/IJob'
 import { SearchContext } from '../contexts/SearchContext'
+import type { Job } from '../models/job'
 
 interface JobApiResponse {
   hits: string[]
@@ -16,7 +16,7 @@ export const Jobs = () => {
   const items = ads?.hits || []
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const jobs: IJob[] = items.map((ad: any, i: number) => {
+  const jobs: Job[] = items.map((ad: any, i: number) => {
     const title = ad?.headline || ad?.occupation?.label || 'roll saknas'
 
     const role = ad?.employer?.name || 'Arbetsgivare saknas'
