@@ -8,4 +8,5 @@ export default defineConfig({
     exclude: ['@digi/arbetsformedlingen'],
   },
   plugins: [react(), tailwindcss()],
+  base: 'Digi-design-system-with-taxonomy-api',
 })
