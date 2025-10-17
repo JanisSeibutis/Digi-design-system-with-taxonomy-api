@@ -27,15 +27,15 @@ export default function Header() {
         </Link>
 
         <div slot="header-content" className="af-header__actions">
-          <Link to="/login" className="af-header__link">
+          <Link to="/" className="af-header__link">
             Logga in
           </Link>
           <span className="af-header__sep">|</span>
-          <Link to="/languages" className="af-header__link">
+          <Link to="/" className="af-header__link">
             Språk
           </Link>
           <span className="af-header__sep">|</span>
-          <Link to="/search" className="af-header__link">
+          <Link to="/" className="af-header__link">
             Sök
           </Link>
         </div>
